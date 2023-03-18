@@ -55,7 +55,9 @@ const VerifyScreen = () => {
           style={styles.inputField}
           placeholder="Gali koodhka 6 number kakooban"
         />
-        <TouchableOpacity onPress={() => ''} style={styles.primaryBtn}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(ROUTES.DRAWER)}
+          style={styles.primaryBtn}>
           <Text style={styles.primaryBtnText}>Xaqiiji</Text>
         </TouchableOpacity>
       </View>
