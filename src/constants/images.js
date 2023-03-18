@@ -5,8 +5,11 @@ export default {
   back: require('../assets/13.png'),
   person: require('../assets/Person.png'),
   bookmark: require('../assets/Bookmark.png'),
+  bookmark2: require('../assets/Bookmark2.png'),
   call: require('../assets/Call.png'),
   share: require('../assets/Share.png'),
   rate: require('../assets/Star.png'),
   logout: require('../assets/logout.png'),
+  cart: require('../assets/9.png'),
+  call2: require('../assets/call2.png'),
 };

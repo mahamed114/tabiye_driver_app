@@ -14,7 +14,7 @@ function AppNavigation() {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName={ROUTES.LOGIN}>
+        initialRouteName={ROUTES.DRAWER}>
         <Stack.Screen name={ROUTES.LOGIN} component={LoginScreen} />
         <Stack.Screen name={ROUTES.VERIFY} component={VerifyScreen} />
         <Stack.Screen
