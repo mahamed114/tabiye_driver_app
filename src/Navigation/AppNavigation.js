@@ -3,7 +3,13 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {COLORS, ROUTES} from '../constants';
-import {DrawerScreen, HomeScreen, LoginScreen, VerifyScreen} from '../screens';
+import {
+  DrawerScreen,
+  HomeScreen,
+  IskaRogoOrderScreen,
+  LoginScreen,
+  VerifyScreen,
+} from '../screens';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +33,17 @@ function AppNavigation() {
           component={HomeScreen}
           options={{
             headerShown: true,
+            headerStyle: {
+              backgroundColor: COLORS.primary,
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.ISKAROGOORDER}
+          component={IskaRogoOrderScreen}
+          options={{
+            headerShown: true,
+            title: '',
             headerStyle: {
               backgroundColor: COLORS.primary,
             },

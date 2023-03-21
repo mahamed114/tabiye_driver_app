@@ -3,4 +3,5 @@ export default {
   VERIFY: 'Verify',
   DRAWER: 'Drawer',
   HOME: 'Home',
+  ISKAROGOORDER: 'IskarogoOrder',
 };

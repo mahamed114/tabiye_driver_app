@@ -7,12 +7,14 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import {COLORS, IMAGES} from '../constants';
+import {COLORS, IMAGES, ROUTES} from '../constants';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
     <>
       <StatusBar
@@ -64,7 +66,7 @@ const HomeScreen = () => {
                   fontSize: 22,
                   color: COLORS.tertiary,
                 }}>
-                Dalab #2100
+                Dalabka #2100
               </Text>
               <Text
                 style={{
@@ -77,7 +79,7 @@ const HomeScreen = () => {
               </Text>
             </View>
             <TouchableOpacity
-              onpress={() => ''}
+              onPress={() => navigation.navigate(ROUTES.ISKAROGOORDER)}
               style={{padding: 3, right: -7}}>
               <MaterialIcons
                 name="more-vert"
