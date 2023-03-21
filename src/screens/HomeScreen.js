@@ -7,15 +7,14 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import ToastManager from 'toastify-react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import {COLORS, IMAGES} from '../constants';
 
 const HomeScreen = () => {
   return (
     <>
-      <ToastManager />
       <StatusBar
         barStyle="dark-content"
         hidden={false}
@@ -32,6 +31,7 @@ const HomeScreen = () => {
             paddingVertical: 10,
             paddingHorizontal: 20,
             borderRadius: 10,
+            marginBottom: 20,
           }}>
           <Image source={IMAGES.bookmark2} style={{width: 28, height: 28}} />
           <Text
@@ -44,14 +44,12 @@ const HomeScreen = () => {
             Dalabaadka
           </Text>
         </View>
-        <TouchableOpacity
+        <View
           style={{
-            marginTop: 30,
-            height: 180,
-            backgroundColor: COLORS.gray4,
+            paddingHorizontal: 10,
+            paddingVertical: 14,
             borderRadius: 10,
-            paddingVertical: 10,
-            paddingHorizontal: 14,
+            backgroundColor: COLORS.gray4,
           }}>
           <View
             style={{
@@ -78,12 +76,22 @@ const HomeScreen = () => {
                 January 15, 2023
               </Text>
             </View>
-            <TouchableOpacity onpress={() => ''} style={{padding: 3}}>
-              <Image source={IMAGES.call2} style={{width: 28, height: 28}} />
+            <TouchableOpacity
+              onpress={() => ''}
+              style={{padding: 3, right: -7}}>
+              <MaterialIcons
+                name="more-vert"
+                size={28}
+                color={COLORS.secondary}
+              />
             </TouchableOpacity>
           </View>
           <View
-            style={{marginTop: 15, flexDirection: 'row', alignItems: 'center'}}>
+            style={{
+              marginTop: 15,
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
             <Text
               style={{
                 fontSize: 16,
@@ -124,10 +132,9 @@ const HomeScreen = () => {
                     backgroundColor: 'red',
                     padding: 3,
                     alignItems: 'center',
-                    // marginRight:5,
                     left: -6,
                   }}>
-                  <Icon
+                  <FontAwesome
                     name="remove"
                     size={20}
                     color={'white'}
@@ -145,7 +152,7 @@ const HomeScreen = () => {
               </View>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => ''}
+              onpress={() => ''}
               style={{
                 marginLeft: 10,
                 backgroundColor: COLORS.tertiary,
@@ -164,7 +171,7 @@ const HomeScreen = () => {
               </Text>
             </TouchableOpacity>
           </View>
-        </TouchableOpacity>
+        </View>
       </ScrollView>
     </>
   );
