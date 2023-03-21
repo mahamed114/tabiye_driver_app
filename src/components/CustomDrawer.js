@@ -1,6 +1,6 @@
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 
-import {COLORS, IMAGES} from '../constants';
+import {COLORS, IMAGES, ROUTES} from '../constants';
 
 const CustomDrawer = ({navigation}) => {
   return (
@@ -48,7 +48,8 @@ const CustomDrawer = ({navigation}) => {
               }}>
               Dear Customer Name
             </Text>
-            <TouchableOpacity onPress={() => ''}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate(ROUTES.ACCOUNT)}>
               <Text
                 style={{
                   fontSize: 16,
@@ -67,7 +68,7 @@ const CustomDrawer = ({navigation}) => {
         style={{padding: 20, display: 'flex', justifyContent: 'space-between'}}>
         <View>
           <TouchableOpacity
-            onPress={() => ''}
+            onPress={() => navigation.navigate(ROUTES.ACCOUNT)}
             style={{
               flexDirection: 'row',
               alignItems: 'center',

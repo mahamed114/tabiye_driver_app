@@ -8,4 +8,5 @@ export default {
   XAMUULORDER: 'XamuulOrder',
   DAMEERORDER: 'DameerOrder',
   CAGAFORDER: 'CagafOrder',
+  ACCOUNT: 'Account',
 };

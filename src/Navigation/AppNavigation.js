@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import {COLORS, ROUTES} from '../constants';
 import {
+  Account,
   BooyadOrderScreen,
   CagafOrderScreen,
   DameerOrderScreen,
@@ -37,6 +38,17 @@ function AppNavigation() {
           component={HomeScreen}
           options={{
             headerShown: true,
+            headerStyle: {
+              backgroundColor: COLORS.primary,
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.ACCOUNT}
+          component={Account}
+          options={{
+            headerShown: true,
+            title: 'Akoonkaaga',
             headerStyle: {
               backgroundColor: COLORS.primary,
             },
