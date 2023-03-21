@@ -3,3 +3,4 @@ export {default as VerifyScreen} from './VerifyScreen';
 export {default as DrawerScreen} from './DrawerScreen';
 export {default as HomeScreen} from './HomeScreen';
 export {default as IskaRogoOrderScreen} from './IskaRogoOrderScreen';
+export {default as BooyadOrderScreen} from './BooyadOrderScreen';

@@ -4,4 +4,5 @@ export default {
   DRAWER: 'Drawer',
   HOME: 'Home',
   ISKAROGOORDER: 'IskarogoOrder',
+  BOOYADORDER: 'BooyadOrder',
 };
