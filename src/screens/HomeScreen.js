@@ -79,7 +79,7 @@ const HomeScreen = () => {
               </Text>
             </View>
             <TouchableOpacity
-              onPress={() => navigation.navigate(ROUTES.XAMUULORDER)}
+              onPress={() => navigation.navigate(ROUTES.DAMEERORDER)}
               style={{padding: 3, right: -7}}>
               <MaterialIcons
                 name="more-vert"

@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {COLORS, ROUTES} from '../constants';
 import {
   BooyadOrderScreen,
+  DameerOrderScreen,
   DrawerScreen,
   HomeScreen,
   IskaRogoOrderScreen,
@@ -65,6 +66,17 @@ function AppNavigation() {
         <Stack.Screen
           name={ROUTES.XAMUULORDER}
           component={XamuulOrderScreen}
+          options={{
+            headerShown: true,
+            title: '',
+            headerStyle: {
+              backgroundColor: COLORS.primary,
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.DAMEERORDER}
+          component={DameerOrderScreen}
           options={{
             headerShown: true,
             title: '',

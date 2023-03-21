@@ -6,4 +6,5 @@ export default {
   ISKAROGOORDER: 'IskarogoOrder',
   BOOYADORDER: 'BooyadOrder',
   XAMUULORDER: 'XamuulOrder',
+  DAMEERORDER: 'DameerOrder',
 };
