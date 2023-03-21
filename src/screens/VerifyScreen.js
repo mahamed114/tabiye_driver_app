@@ -8,11 +8,10 @@ import {
   Dimensions,
   TextInput,
   TouchableOpacity,
+  StatusBar,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-
-import {COLORS, IMAGES, ROUTES} from '../constants';
-import {StatusBar} from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const VerifyScreen = () => {
   const navigation = useNavigation();
@@ -22,29 +21,17 @@ const VerifyScreen = () => {
       <StatusBar
         barStyle="dark-content"
         hidden={false}
-        backgroundColor={COLORS.tertiary}
+        backgroundColor="#1CAF90"
         translucent={true}
       />
       <TouchableOpacity
-        style={{
-          position: 'absolute',
-          top: 40,
-          left: 18,
-        }}
-        onPress={() => navigation.navigate(ROUTES.LOGIN)}>
-        <ImageBackground
-          source={IMAGES.back}
-          style={{
-            width: 28,
-            height: 28,
-          }}
-          imageStyle={{}}
-        />
+        style={styles.backBtn}
+        onPress={() => navigation.navigate('Login')}>
+        <MaterialIcons name="arrow-back-ios" size={28} color={'black'} />
       </TouchableOpacity>
       <ImageBackground
-        source={IMAGES.brand}
+        source={require('../assets/brand.png')}
         style={{width: 250, height: 200}}
-        imageStyle={{}}
       />
       <View style={styles.card}>
         <Text style={styles.subtitle}>
@@ -56,7 +43,7 @@ const VerifyScreen = () => {
           placeholder="Gali koodhka 6 number kakooban"
         />
         <TouchableOpacity
-          onPress={() => navigation.navigate(ROUTES.DRAWER)}
+          onPress={() => navigation.navigate('Drawer')}
           style={styles.primaryBtn}>
           <Text style={styles.primaryBtnText}>Xaqiiji</Text>
         </TouchableOpacity>
@@ -78,7 +65,7 @@ const styles = StyleSheet.create({
   card: {
     height: 450,
     width: Dimensions.get('window').width,
-    backgroundColor: COLORS.white,
+    backgroundColor: 'white',
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     marginTop: 40,
@@ -87,27 +74,32 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 20,
-    color: COLORS.black,
+    color: 'black',
     marginBottom: 20,
   },
   inputField: {
-    backgroundColor: COLORS.gray2,
+    backgroundColor: '#EBEBEB',
     borderRadius: 20,
     marginBottom: 12,
     padding: 10,
   },
   primaryBtn: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: '#15E4B8',
     height: 50,
     borderRadius: 20,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: COLORS.white,
+    color: 'white',
   },
   primaryBtnText: {
-    color: COLORS.white,
+    color: 'white',
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  backBtn: {
+    position: 'absolute',
+    top: 40,
+    left: 18,
   },
 });

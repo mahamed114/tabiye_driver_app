@@ -1,8 +1,4 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-
-import {COLORS, ROUTES} from '../constants';
 import {
   Account,
   BooyadOrderScreen,
@@ -15,6 +11,8 @@ import {
   VerifyScreen,
   XamuulOrderScreen,
 } from '../screens';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 
@@ -25,87 +23,87 @@ function AppNavigation() {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName={ROUTES.DRAWER}>
-        <Stack.Screen name={ROUTES.LOGIN} component={LoginScreen} />
-        <Stack.Screen name={ROUTES.VERIFY} component={VerifyScreen} />
+        initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Verify" component={VerifyScreen} />
         <Stack.Screen
-          name={ROUTES.DRAWER}
+          name="Drawer"
           component={DrawerScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name={ROUTES.HOME}
+          name="Home"
           component={HomeScreen}
           options={{
             headerShown: true,
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.ACCOUNT}
+          name="Account"
           component={Account}
           options={{
             headerShown: true,
             title: 'Akoonkaaga',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.ISKAROGOORDER}
+          name="Iskarogo"
           component={IskaRogoOrderScreen}
           options={{
             headerShown: true,
             title: '',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.BOOYADORDER}
+          name="Booyad"
           component={BooyadOrderScreen}
           options={{
             headerShown: true,
             title: '',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.XAMUULORDER}
+          name="Xamuul"
           component={XamuulOrderScreen}
           options={{
             headerShown: true,
             title: '',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.DAMEERORDER}
+          name="Dameer"
           component={DameerOrderScreen}
           options={{
             headerShown: true,
             title: '',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />
         <Stack.Screen
-          name={ROUTES.CAGAFORDER}
+          name="Cagaf"
           component={CagafOrderScreen}
           options={{
             headerShown: true,
             title: '',
             headerStyle: {
-              backgroundColor: COLORS.primary,
+              backgroundColor: '#15E4B8',
             },
           }}
         />

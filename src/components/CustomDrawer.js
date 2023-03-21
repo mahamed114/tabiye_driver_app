@@ -1,12 +1,11 @@
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-
-import {COLORS, IMAGES, ROUTES} from '../constants';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const CustomDrawer = ({navigation}) => {
   return (
     <View
       style={{
-        backgroundColor: COLORS.white,
+        backgroundColor: 'white',
         flex: 1,
       }}>
       <View
@@ -14,7 +13,7 @@ const CustomDrawer = ({navigation}) => {
           paddingTop: 40,
           paddingBottom: 20,
           paddingHorizontal: 10,
-          backgroundColor: COLORS.primary,
+          backgroundColor: '#15E4B8',
         }}>
         <View
           style={{
@@ -30,7 +29,7 @@ const CustomDrawer = ({navigation}) => {
               alignSelf: 'center',
             }}>
             <Image
-              source={IMAGES.avatar}
+              source={require('../assets/avatar.png')}
               resizeMode="cover"
               style={{
                 height: '100%',
@@ -44,17 +43,16 @@ const CustomDrawer = ({navigation}) => {
               style={{
                 fontSize: 18,
                 fontWeight: '500',
-                color: COLORS.secondary,
+                color: '#08265A',
               }}>
               Dear Customer Name
             </Text>
-            <TouchableOpacity
-              onPress={() => navigation.navigate(ROUTES.ACCOUNT)}>
+            <TouchableOpacity onPress={() => navigation.navigate('Account')}>
               <Text
                 style={{
                   fontSize: 16,
                   textDecorationLine: 'underline',
-                  color: COLORS.white,
+                  color: 'white',
                   marginTop: 10,
                   fontWeight: '500',
                 }}>
@@ -68,17 +66,17 @@ const CustomDrawer = ({navigation}) => {
         style={{padding: 20, display: 'flex', justifyContent: 'space-between'}}>
         <View>
           <TouchableOpacity
-            onPress={() => navigation.navigate(ROUTES.ACCOUNT)}
+            onPress={() => navigation.navigate('Account')}
             style={{
               flexDirection: 'row',
               alignItems: 'center',
               marginBottom: 18,
             }}>
-            <Image source={IMAGES.person} resizeMode="cover" style={{}} />
+            <MaterialIcons name="person" size={36} color="#A9A9A9" />
             <Text
               style={{
                 marginLeft: 10,
-                color: COLORS.secondary,
+                color: '#08265A',
                 fontWeight: '500',
                 fontSize: 20,
               }}>
@@ -91,28 +89,11 @@ const CustomDrawer = ({navigation}) => {
               alignItems: 'center',
               marginBottom: 18,
             }}>
-            <Image source={IMAGES.bookmark} resizeMode="cover" style={{}} />
+            <MaterialIcons name="call" size={36} color="#A9A9A9" />
             <Text
               style={{
                 marginLeft: 10,
-                color: COLORS.secondary,
-                fontWeight: '500',
-                fontSize: 20,
-              }}>
-              Dalabaadkaaga
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginBottom: 18,
-            }}>
-            <Image source={IMAGES.call} resizeMode="cover" style={{}} />
-            <Text
-              style={{
-                marginLeft: 10,
-                color: COLORS.secondary,
+                color: '#08265A',
                 fontWeight: '500',
                 fontSize: 20,
               }}>
@@ -125,11 +106,11 @@ const CustomDrawer = ({navigation}) => {
               alignItems: 'center',
               marginBottom: 18,
             }}>
-            <Image source={IMAGES.share} resizeMode="cover" style={{}} />
+            <MaterialIcons name="share" size={36} color="#A9A9A9" />
             <Text
               style={{
                 marginLeft: 10,
-                color: COLORS.secondary,
+                color: '#08265A',
                 fontWeight: '500',
                 fontSize: 20,
               }}>
@@ -142,11 +123,11 @@ const CustomDrawer = ({navigation}) => {
               alignItems: 'center',
               marginBottom: 18,
             }}>
-            <Image source={IMAGES.rate} resizeMode="cover" style={{}} />
+            <MaterialIcons name="star" size={36} color="#A9A9A9" />
             <Text
               style={{
                 marginLeft: 10,
-                color: COLORS.secondary,
+                color: '#08265A',
                 fontWeight: '500',
                 fontSize: 20,
               }}>
@@ -159,11 +140,11 @@ const CustomDrawer = ({navigation}) => {
               alignItems: 'center',
               marginBottom: 18,
             }}>
-            <Image source={IMAGES.logout} resizeMode="cover" style={{}} />
+            <MaterialIcons name="logout" size={36} color="#A9A9A9" />
             <Text
               style={{
                 marginLeft: 10,
-                color: COLORS.secondary,
+                color: '#08265A',
                 fontWeight: '500',
                 fontSize: 20,
               }}>
@@ -181,7 +162,7 @@ const CustomDrawer = ({navigation}) => {
           alignSelf: 'center',
         }}>
         <Image
-          source={IMAGES.brand}
+          source={require('../assets/brand.png')}
           resizeMode="cover"
           style={{
             height: '100%',

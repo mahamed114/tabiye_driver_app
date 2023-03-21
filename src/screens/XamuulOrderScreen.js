@@ -1,9 +1,6 @@
-import {View, Text, ScrollView} from 'react-native';
 import React from 'react';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import {COLORS} from '../constants';
-import {TouchableOpacity} from 'react-native';
 
 const XamuulOrderScreen = () => {
   return (
@@ -16,7 +13,7 @@ const XamuulOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginBottom: 15,
         }}>
         Kusaabsan Dalabka
@@ -26,7 +23,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Sumada:
@@ -35,7 +32,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           #2450
         </Text>
@@ -45,7 +42,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Taariikhda:
@@ -54,7 +51,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           August 10, 2023
         </Text>
@@ -64,7 +61,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Adeega:
@@ -73,7 +70,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           Gaadhi Xamuul{' '}
         </Text>
@@ -83,7 +80,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Tirada Lawdhka:
@@ -92,7 +89,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           3
         </Text>
@@ -102,7 +99,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Goobta laga qaadayo:
@@ -111,7 +108,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           sheekh nuur ciise meesha bajaajta lagaga dego dhankeeda bari, jijiga
         </Text>
@@ -121,7 +118,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Goobta la geynayo:
@@ -130,7 +127,7 @@ const XamuulOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           sheekh nuur ciise meesha bajaajta lagaga dego dhankeeda bari, jijiga
         </Text>
@@ -139,7 +136,7 @@ const XamuulOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginTop: 20,
           marginBottom: 10,
         }}>
@@ -149,7 +146,7 @@ const XamuulOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         Cumer aw maxamuud abdulaahi
@@ -158,7 +155,7 @@ const XamuulOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         0915000000
@@ -167,7 +164,7 @@ const XamuulOrderScreen = () => {
         style={{
           marginTop: 40,
           flexDirection: 'row',
-          backgroundColor: COLORS.tertiary,
+          backgroundColor: '#1CAF90',
           paddingRight: 18,
           paddingLeft: 10,
           borderRadius: 4,
@@ -177,14 +174,14 @@ const XamuulOrderScreen = () => {
         <MaterialIcons
           name="call"
           size={30}
-          color={COLORS.white}
+          color="white"
           style={{marginTop: 1}}
         />
         <Text
           style={{
             fontWeight: '700',
             fontSize: 22,
-            color: COLORS.white,
+            color: 'white',
             left: 8,
           }}>
           Wac
@@ -196,7 +193,7 @@ const XamuulOrderScreen = () => {
             fontSize: 17,
             fontWeight: 'bold',
             textDecorationLine: 'underline',
-            color: COLORS.gray3,
+            color: '#888888',
           }}>
           Iska Saar
         </Text>

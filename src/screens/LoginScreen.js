@@ -12,8 +12,6 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import {COLORS, IMAGES, ROUTES} from '../constants';
-
 const LoginScreen = () => {
   const navigation = useNavigation();
 
@@ -22,16 +20,13 @@ const LoginScreen = () => {
       <StatusBar
         barStyle="dark-content"
         hidden={false}
-        backgroundColor={COLORS.tertiary}
+        backgroundColor="#1CAF90"
         translucent={true}
       />
-
       <ImageBackground
-        source={IMAGES.brand}
+        source={require('../assets/brand.png')}
         style={{width: 250, height: 200}}
-        imageStyle={{}}
       />
-
       <View style={styles.card}>
         <Text style={styles.subtitle}>Gali taleefon kaaga</Text>
         <TextInput
@@ -40,31 +35,16 @@ const LoginScreen = () => {
           placeholder="Gali nambarkaga si'aad uhesho otp code"
         />
         <TouchableOpacity
-          onPress={() => navigation.navigate(ROUTES.VERIFY)}
+          onPress={() => navigation.navigate('Verify')}
           style={styles.primaryBtn}>
           <Text style={styles.primaryBtnText}>Dir</Text>
         </TouchableOpacity>
-        <View
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            marginTop: 14,
-            marginLeft: 4,
-          }}>
+        <View style={styles.notify}>
           <Text style={{fontSize: 16, marginRight: 5}}>
             Akoon hadaadan lahayn?
           </Text>
-          <TouchableOpacity
-            onPress={() => ''}>
-            <Text
-              style={{
-                fontSize: 17,
-                fontWeight: 'bold',
-                textDecorationLine: 'underline',
-                color: COLORS.primary,
-              }}>
-              Samayso
-            </Text>
+          <TouchableOpacity onPress={() => ''}>
+            <Text style={styles.signUpCTA}>Samayso</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -85,7 +65,7 @@ const styles = StyleSheet.create({
   card: {
     height: 450,
     width: Dimensions.get('window').width,
-    backgroundColor: COLORS.white,
+    backgroundColor: 'white',
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     marginTop: 40,
@@ -94,27 +74,39 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 24,
-    color: COLORS.black,
+    color: 'black',
     marginBottom: 20,
   },
   inputField: {
-    backgroundColor: COLORS.gray2,
+    backgroundColor: '#EBEBEB',
     borderRadius: 20,
     marginBottom: 12,
     padding: 10,
   },
   primaryBtn: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: '#15E4B8',
     height: 50,
     borderRadius: 20,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: COLORS.white,
+    color: 'white',
   },
   primaryBtnText: {
-    color: COLORS.white,
+    color: 'white',
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  notify: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 14,
+    marginLeft: 4,
+  },
+  signUpCTA: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
+    color: '#15E4B8',
   },
 });

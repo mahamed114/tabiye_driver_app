@@ -3,7 +3,6 @@ import {
   View,
   Text,
   StatusBar,
-  Image,
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
@@ -11,36 +10,34 @@ import {useNavigation} from '@react-navigation/native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import {COLORS, IMAGES, ROUTES} from '../constants';
-
 const HomeScreen = () => {
   const navigation = useNavigation();
+
   return (
     <>
       <StatusBar
         barStyle="dark-content"
         hidden={false}
-        backgroundColor={COLORS.tertiary}
+        backgroundColor="#1CAF90"
         translucent={true}
       />
-
       <ScrollView style={{flex: 1, padding: 20}}>
         <View
           style={{
             flexDirection: 'row',
             alignItems: 'center',
-            backgroundColor: COLORS.primary,
+            backgroundColor: '#15E4B8',
             paddingVertical: 10,
             paddingHorizontal: 20,
             borderRadius: 10,
             marginBottom: 20,
           }}>
-          <Image source={IMAGES.bookmark2} style={{width: 28, height: 28}} />
+          <MaterialIcons name="bookmark-outline" size={28} color="white" />
           <Text
             style={{
               fontSize: 22,
               marginLeft: 14,
-              color: COLORS.white,
+              color: 'white',
               fontWeight: '500',
             }}>
             Dalabaadka
@@ -51,7 +48,7 @@ const HomeScreen = () => {
             paddingHorizontal: 10,
             paddingVertical: 14,
             borderRadius: 10,
-            backgroundColor: COLORS.gray4,
+            backgroundColor: '#E3E3E3',
           }}>
           <View
             style={{
@@ -64,7 +61,7 @@ const HomeScreen = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: 22,
-                  color: COLORS.tertiary,
+                  color: '#1CAF90',
                 }}>
                 Dalabka #2100
               </Text>
@@ -73,19 +70,15 @@ const HomeScreen = () => {
                   marginTop: 2,
                   fontWeight: '300',
                   fontSize: 15,
-                  color: COLORS.black,
+                  color: 'black',
                 }}>
                 January 15, 2023
               </Text>
             </View>
             <TouchableOpacity
-              onPress={() => navigation.navigate(ROUTES.ISKAROGOORDER)}
+              onPress={() => navigation.navigate('Iskarogo')}
               style={{padding: 3, right: -7}}>
-              <MaterialIcons
-                name="more-vert"
-                size={28}
-                color={COLORS.secondary}
-              />
+              <MaterialIcons name="more-vert" size={28} color="#08265A" />
             </TouchableOpacity>
           </View>
           <View
@@ -97,17 +90,10 @@ const HomeScreen = () => {
             <Text
               style={{
                 fontSize: 16,
-                color: COLORS.secondary,
+                color: '#08265A',
               }}>
               Iska Roggo Dhagax Jay-madow
             </Text>
-            <Text
-              style={{
-                marginLeft: 5,
-                fontWeight: '300',
-                fontSize: 16,
-                color: COLORS.black,
-              }}></Text>
           </View>
           <View
             style={{
@@ -121,7 +107,7 @@ const HomeScreen = () => {
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
-                  backgroundColor: COLORS.white,
+                  backgroundColor: 'white',
                   paddingHorizontal: 14,
                   paddingVertical: 6,
                   borderRadius: 10,
@@ -147,7 +133,7 @@ const HomeScreen = () => {
                   style={{
                     fontSize: 17,
                     fontWeight: '300',
-                    color: COLORS.black,
+                    color: 'black',
                   }}>
                   Ma Aqbalin
                 </Text>
@@ -157,7 +143,7 @@ const HomeScreen = () => {
               onpress={() => ''}
               style={{
                 marginLeft: 10,
-                backgroundColor: COLORS.tertiary,
+                backgroundColor: '#1CAF90',
                 paddingHorizontal: 14,
                 paddingTop: 6,
                 paddingBottom: 8,
@@ -167,7 +153,7 @@ const HomeScreen = () => {
                 style={{
                   fontSize: 17,
                   fontWeight: '400',
-                  color: COLORS.white,
+                  color: 'white',
                 }}>
                 Aqbal
               </Text>

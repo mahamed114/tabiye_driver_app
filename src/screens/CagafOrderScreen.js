@@ -1,9 +1,6 @@
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import {COLORS} from '../constants';
-import {TouchableOpacity} from 'react-native';
 
 const CagafOrderScreen = () => {
   return (
@@ -16,7 +13,7 @@ const CagafOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginBottom: 15,
         }}>
         Kusaabsan Dalabka
@@ -26,7 +23,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Sumada:
@@ -35,7 +32,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           #2450
         </Text>
@@ -45,7 +42,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Taariikhda:
@@ -54,7 +51,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           August 10, 2023
         </Text>
@@ -64,7 +61,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Adeega:
@@ -73,7 +70,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           Cagaf
         </Text>
@@ -83,7 +80,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Saacadaha Shaqada:
@@ -92,7 +89,7 @@ const CagafOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           3
         </Text>
@@ -101,7 +98,7 @@ const CagafOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginTop: 20,
           marginBottom: 10,
         }}>
@@ -111,7 +108,7 @@ const CagafOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         Cumer aw maxamuud abdulaahi
@@ -120,17 +117,16 @@ const CagafOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         0915000000
       </Text>
-
       <TouchableOpacity
         style={{
           marginTop: 40,
           flexDirection: 'row',
-          backgroundColor: COLORS.tertiary,
+          backgroundColor: '#1CAF90',
           paddingRight: 18,
           paddingLeft: 10,
           borderRadius: 4,
@@ -140,27 +136,26 @@ const CagafOrderScreen = () => {
         <MaterialIcons
           name="call"
           size={30}
-          color={COLORS.white}
+          color="white"
           style={{marginTop: 1}}
         />
         <Text
           style={{
             fontWeight: '700',
             fontSize: 22,
-            color: COLORS.white,
+            color: 'white',
             left: 8,
           }}>
           Wac
         </Text>
       </TouchableOpacity>
-
       <TouchableOpacity onPress={() => ''} style={{marginTop: 30}}>
         <Text
           style={{
             fontSize: 17,
             fontWeight: 'bold',
             textDecorationLine: 'underline',
-            color: COLORS.gray3,
+            color: '#888888',
           }}>
           Iska Saar
         </Text>

@@ -1,17 +1,14 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
 import {
   View,
   TextInput,
   SafeAreaView,
   Image,
-  StyleSheet,
   Text,
   TouchableOpacity,
+  StatusBar,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import {COLORS, IMAGES} from '../constants';
 
 const Account = () => {
   return (
@@ -19,10 +16,9 @@ const Account = () => {
       <StatusBar
         barStyle="dark-content"
         hidden={false}
-        backgroundColor={COLORS.tertiary}
+        backgroundColor="#1CAF90"
         translucent={true}
       />
-
       <SafeAreaView
         style={{
           flex: 1,
@@ -36,7 +32,7 @@ const Account = () => {
             alignSelf: 'center',
           }}>
           <Image
-            source={IMAGES.avatar}
+            source={require('../assets/avatar.png')}
             resizeMode="cover"
             style={{
               height: '100%',
@@ -52,13 +48,18 @@ const Account = () => {
               marginBottom: 7,
               fontSize: 16,
               fontWeight: '600',
-              color: COLORS.tertiary,
+              color: '#1CAF90',
             }}>
             Magacaaga
           </Text>
           <TextInput
             keyboardType="default"
-            style={styles.inputField}
+            style={{
+              backgroundColor: '#EBEBEB',
+              borderRadius: 20,
+              marginBottom: 12,
+              padding: 10,
+            }}
             placeholder="Magacaaga..."
           />
         </View>
@@ -69,27 +70,42 @@ const Account = () => {
               marginBottom: 7,
               fontSize: 16,
               fontWeight: '600',
-              color: COLORS.tertiary,
+              color: '#1CAF90',
             }}>
             Nambarkaaga
           </Text>
           <TextInput
             keyboardType="default"
-            style={styles.inputField}
+            style={{
+              backgroundColor: '#EBEBEB',
+              borderRadius: 20,
+              marginBottom: 12,
+              padding: 10,
+            }}
             placeholder="Nambarkaaga..."
           />
         </View>
         <TouchableOpacity
           onPress={() => console.log('complete')}
-          style={styles.primaryBtn}>
-          <Text style={styles.primaryBtnText}>Keydi</Text>
+          style={{
+            backgroundColor: '#15E4B8',
+            height: 50,
+            borderRadius: 20,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+          }}>
+          <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
+            Keydi
+          </Text>
         </TouchableOpacity>
         <View
           style={{
             marginVertical: 40,
             marginHorizontal: 10,
             height: 0.8,
-            backgroundColor: COLORS.gray3,
+            backgroundColor: '#888888',
           }}></View>
         <View
           style={{
@@ -97,13 +113,13 @@ const Account = () => {
             alignItems: 'center',
             marginBottom: 5,
           }}>
-          <MaterialIcons name="done" size={28} color={COLORS.primary} />
+          <MaterialIcons name="done" size={28} color={'#15E4B8'} />
           <Text
             style={{
               marginLeft: 10,
               fontSize: 18,
               fontWeight: '600',
-              color: COLORS.secondary,
+              color: '#08265A',
             }}>
             Waa la xaqiijiyey akoonkaaga
           </Text>
@@ -114,13 +130,13 @@ const Account = () => {
             alignItems: 'center',
             marginBottom: 5,
           }}>
-          <MaterialIcons name="star" size={28} color={COLORS.primary} />
+          <MaterialIcons name="star" size={28} color={'#15E4B8'} />
           <Text
             style={{
               marginLeft: 10,
               fontSize: 18,
               fontWeight: '600',
-              color: COLORS.secondary,
+              color: '#08265A',
             }}>
             {'50'} Macmiil - {'4.0'}
           </Text>
@@ -131,13 +147,13 @@ const Account = () => {
             alignItems: 'center',
             marginBottom: 5,
           }}>
-          <MaterialIcons name="shopping-bag" size={28} color={COLORS.primary} />
+          <MaterialIcons name="shopping-bag" size={28} color={'#15E4B8'} />
           <Text
             style={{
               marginLeft: 10,
               fontSize: 18,
               fontWeight: '600',
-              color: COLORS.secondary,
+              color: '#08265A',
             }}>
             500 dhibcood
           </Text>
@@ -148,26 +164,3 @@ const Account = () => {
 };
 
 export default Account;
-
-const styles = StyleSheet.create({
-  inputField: {
-    backgroundColor: COLORS.gray2,
-    borderRadius: 20,
-    marginBottom: 12,
-    padding: 10,
-  },
-  primaryBtn: {
-    backgroundColor: COLORS.primary,
-    height: 50,
-    borderRadius: 20,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: COLORS.white,
-  },
-  primaryBtnText: {
-    color: COLORS.white,
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});

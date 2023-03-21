@@ -1,7 +1,6 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
-import {COLORS, ROUTES} from '../constants';
 import CustomDrawer from '../components/CustomDrawer';
 import HomeScreen from '../screens/HomeScreen';
 
@@ -11,11 +10,11 @@ const DrawerNavigator = () => {
   return (
     <Drawer.Navigator drawerContent={props => <CustomDrawer {...props} />}>
       <Drawer.Screen
-        name={ROUTES.HOME}
+        name="Home"
         component={HomeScreen}
         options={{
           headerStyle: {
-            backgroundColor: COLORS.primary,
+            backgroundColor: '#15E4B8',
           },
           title: 'Tabiye',
         }}

@@ -1,8 +1,6 @@
-import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import React from 'react';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import {COLORS} from '../constants';
 
 const BooyadOrderScreen = () => {
   return (
@@ -15,7 +13,7 @@ const BooyadOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginBottom: 15,
         }}>
         Kusaabsan Dalabka
@@ -25,7 +23,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Sumada:
@@ -34,7 +32,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           #4450
         </Text>
@@ -44,7 +42,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Taariikhda:
@@ -53,7 +51,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           August 10, 2023
         </Text>
@@ -63,7 +61,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '700',
             fontSize: 18,
-            color: COLORS.gray3,
+            color: '#888888',
             marginRight: 10,
           }}>
           Adeega:
@@ -72,7 +70,7 @@ const BooyadOrderScreen = () => {
           style={{
             fontWeight: '500',
             fontSize: 18,
-            color: COLORS.gray1,
+            color: '#444444',
           }}>
           Booyad Biyo
         </Text>
@@ -81,7 +79,7 @@ const BooyadOrderScreen = () => {
         style={{
           fontWeight: '700',
           fontSize: 20,
-          color: COLORS.tertiary,
+          color: '#1CAF90',
           marginTop: 20,
           marginBottom: 10,
         }}>
@@ -91,7 +89,7 @@ const BooyadOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         Cumar aw maxamuud abdulaahi
@@ -100,7 +98,7 @@ const BooyadOrderScreen = () => {
         style={{
           fontWeight: '500',
           fontSize: 18,
-          color: COLORS.gray1,
+          color: '#444444',
           flexWrap: 'wrap',
         }}>
         0915000000
@@ -109,7 +107,7 @@ const BooyadOrderScreen = () => {
         style={{
           marginTop: 40,
           flexDirection: 'row',
-          backgroundColor: COLORS.tertiary,
+          backgroundColor: '#1CAF90',
           paddingRight: 18,
           paddingLeft: 10,
           borderRadius: 4,
@@ -119,14 +117,14 @@ const BooyadOrderScreen = () => {
         <MaterialIcons
           name="call"
           size={30}
-          color={COLORS.white}
+          color="white"
           style={{marginTop: 1}}
         />
         <Text
           style={{
             fontWeight: '700',
             fontSize: 22,
-            color: COLORS.white,
+            color: 'white',
             left: 8,
           }}>
           Wac
@@ -138,7 +136,7 @@ const BooyadOrderScreen = () => {
             fontSize: 17,
             fontWeight: 'bold',
             textDecorationLine: 'underline',
-            color: COLORS.gray3,
+            color: '#888888',
           }}>
           Iska Saar
         </Text>
