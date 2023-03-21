@@ -5,4 +5,5 @@ export default {
   HOME: 'Home',
   ISKAROGOORDER: 'IskarogoOrder',
   BOOYADORDER: 'BooyadOrder',
+  XAMUULORDER: 'XamuulOrder',
 };

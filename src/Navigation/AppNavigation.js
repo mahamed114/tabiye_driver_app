@@ -10,6 +10,7 @@ import {
   IskaRogoOrderScreen,
   LoginScreen,
   VerifyScreen,
+  XamuulOrderScreen,
 } from '../screens';
 
 const Stack = createStackNavigator();
@@ -53,6 +54,17 @@ function AppNavigation() {
         <Stack.Screen
           name={ROUTES.BOOYADORDER}
           component={BooyadOrderScreen}
+          options={{
+            headerShown: true,
+            title: '',
+            headerStyle: {
+              backgroundColor: COLORS.primary,
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.XAMUULORDER}
+          component={XamuulOrderScreen}
           options={{
             headerShown: true,
             title: '',
