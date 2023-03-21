@@ -6,3 +6,4 @@ export {default as IskaRogoOrderScreen} from './IskaRogoOrderScreen';
 export {default as BooyadOrderScreen} from './BooyadOrderScreen';
 export {default as XamuulOrderScreen} from './XamuulOrderScreen';
 export {default as DameerOrderScreen} from './DameerOrderScreen';
+export {default as CagafOrderScreen} from './CagafOrderScreen';

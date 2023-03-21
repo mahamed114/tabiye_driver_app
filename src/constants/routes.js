@@ -7,4 +7,5 @@ export default {
   BOOYADORDER: 'BooyadOrder',
   XAMUULORDER: 'XamuulOrder',
   DAMEERORDER: 'DameerOrder',
+  CAGAFORDER: 'CagafOrder',
 };
