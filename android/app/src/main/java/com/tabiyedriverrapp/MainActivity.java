@@ -1,4 +1,4 @@
-package com.tabiye_driver_app;
+package com.tabiyedriverrapp;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
@@ -15,7 +15,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "tabiye_driver_app";
+    return "Tabiye Dirawal";
   }
 
   @Override

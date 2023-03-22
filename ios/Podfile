@@ -21,7 +21,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'tabiye_driver_app' do
+target 'TabiyeDirawal' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -43,7 +43,7 @@ target 'tabiye_driver_app' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'tabiye_driver_appTests' do
+  target 'TabiyeDirawalTests' do
     inherit! :complete
     # Pods for testing
   end

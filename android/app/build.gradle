@@ -94,9 +94,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.tabiye_driver_app"
+    namespace "com.tabiyedriverrapp"
     defaultConfig {
-        applicationId "com.tabiye_driver_app"
+        applicationId "com.tabiyedriverrapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

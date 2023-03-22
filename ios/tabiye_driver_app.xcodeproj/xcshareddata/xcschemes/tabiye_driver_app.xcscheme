@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "tabiye_driver_app.app"
-               BlueprintName = "tabiye_driver_app"
-               ReferencedContainer = "container:tabiye_driver_app.xcodeproj">
+               BuildableName = "TabiyeDirawal.app"
+               BlueprintName = "TabiyeDirawal"
+               ReferencedContainer = "container:TabiyeDirawal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "tabiye_driver_appTests.xctest"
-               BlueprintName = "tabiye_driver_appTests"
-               ReferencedContainer = "container:tabiye_driver_app.xcodeproj">
+               BuildableName = "TabiyeDirawalTests.xctest"
+               BlueprintName = "TabiyeDirawalTests"
+               ReferencedContainer = "container:TabiyeDirawal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "tabiye_driver_app.app"
-            BlueprintName = "tabiye_driver_app"
-            ReferencedContainer = "container:tabiye_driver_app.xcodeproj">
+            BuildableName = "TabiyeDirawal.app"
+            BlueprintName = "TabiyeDirawal"
+            ReferencedContainer = "container:TabiyeDirawal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "tabiye_driver_app.app"
-            BlueprintName = "tabiye_driver_app"
-            ReferencedContainer = "container:tabiye_driver_app.xcodeproj">
+            BuildableName = "TabiyeDirawal.app"
+            BlueprintName = "TabiyeDirawal"
+            ReferencedContainer = "container:TabiyeDirawal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
