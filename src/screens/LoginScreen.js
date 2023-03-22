@@ -33,6 +33,8 @@ const LoginScreen = () => {
           keyboardType="phone-pad"
           style={styles.inputField}
           placeholder="Gali nambarkaga si'aad uhesho otp code"
+          placeholderTextColor="#444444"
+          color="black"
         />
         <TouchableOpacity
           onPress={() => navigation.navigate('Verify')}
@@ -40,7 +42,7 @@ const LoginScreen = () => {
           <Text style={styles.primaryBtnText}>Dir</Text>
         </TouchableOpacity>
         <View style={styles.notify}>
-          <Text style={{fontSize: 16, marginRight: 5}}>
+          <Text style={{fontSize: 16, marginRight: 5, color: 'black'}}>
             Akoon hadaadan lahayn?
           </Text>
           <TouchableOpacity onPress={() => ''}>

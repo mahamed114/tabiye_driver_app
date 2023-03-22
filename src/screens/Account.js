@@ -61,6 +61,8 @@ const Account = () => {
               padding: 10,
             }}
             placeholder="Magacaaga..."
+            placeholderTextColor="#444444"
+            color="black"
           />
         </View>
         <View style={{marginBottom: 3}}>
@@ -83,6 +85,8 @@ const Account = () => {
               padding: 10,
             }}
             placeholder="Nambarkaaga..."
+            placeholderTextColor="#444444"
+            color="black"
           />
         </View>
         <TouchableOpacity

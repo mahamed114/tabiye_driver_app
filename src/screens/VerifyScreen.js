@@ -41,6 +41,8 @@ const VerifyScreen = () => {
           keyboardType="number-pad"
           style={styles.inputField}
           placeholder="Gali koodhka 6 number kakooban"
+          placeholderTextColor="#444444"
+          color="black"
         />
         <TouchableOpacity
           onPress={() => navigation.navigate('Drawer')}
